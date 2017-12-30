@@ -1,0 +1,6 @@
+/home/sfurman/smart-house/src/main/java/smarthouse/lights/service/LightsService.java
+/home/sfurman/smart-house/src/main/java/smarthouse/tools/MockedData.java
+/home/sfurman/smart-house/src/main/java/smarthouse/lights/data/Light.java
+/home/sfurman/smart-house/src/main/java/smarthouse/lights/controller/LightsController.java
+/home/sfurman/smart-house/src/main/java/smarthouse/tools/ScriptsExecutor.java
+/home/sfurman/smart-house/src/main/java/smarthouse/SmartHouseApplication.java
