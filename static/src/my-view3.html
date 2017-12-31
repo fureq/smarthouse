@@ -13,8 +13,8 @@
             }
         </style>
 
-        <iron-ajax id="getLights" auto url="http://localhost:9000/lights" handle-as="json" on-response="_handleResponse"></iron-ajax>
-        <iron-ajax id="switchLight" method="POST" url="http://localhost:9000/lights/[[_chosenLight]]" handle-as="json" on-response="_onRequestSuccess"></iron-ajax>
+        <iron-ajax id="getLights" auto url="http://192.168.0.23:9000/lights" handle-as="json" on-response="_handleResponse"></iron-ajax>
+        <iron-ajax id="switchLight" method="POST" url="http://192.168.0.23:9000/lights/[[_chosenLight]]" handle-as="json" on-response="_onRequestSuccess"></iron-ajax>
 
         <template is="dom-repeat" items="{{lights}}">
             <div class="card">

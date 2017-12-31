@@ -78,7 +78,7 @@
       .deneme span { font-size: 30px; font-weight: 200; }
       .deneme strong { position: absolute; right: 10px; top: 25px; font-size: 34px; }
     </style>
-    <iron-ajax id="request" auto url="http://localhost:9000/dth/temperature" handle-as="json" on-response="_handleResponse"></iron-ajax>
+    <iron-ajax id="request" auto url="http://192.168.0.23:9000/dth/temperature" handle-as="json" on-response="_handleResponse"></iron-ajax>
     <div class="container">
       <paper-button class="refresh-button" toggles on-tap="_onButtonTap">
         TEMPERATURE

@@ -15,9 +15,9 @@ public class GpioService {
     private Map<Integer, GpioPinDigitalOutput> lights;
 
     public GpioService() {
-        gpioController = GpioFactory.getInstance();
-        this.lights = new HashMap<>();
-        mapLights();
+            gpioController = GpioFactory.getInstance();
+            this.lights = new HashMap<>();
+            mapLights();
     }
 
     public void changeState(int id) {
@@ -31,10 +31,10 @@ public class GpioService {
 
     private void mapLights() {
         this.lights.put(1, gpioController.provisionDigitalOutputPin(
-                        RaspiPin.GPIO_17,
+                        RaspiPin.GPIO_00,
                         PinState.LOW));
         this.lights.put(2, gpioController.provisionDigitalOutputPin(
-                RaspiPin.GPIO_27,
+                RaspiPin.GPIO_02,
                 PinState.LOW));
     }
 }
