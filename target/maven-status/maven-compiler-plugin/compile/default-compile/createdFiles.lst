@@ -1,3 +1,4 @@
+smarthouse/configuration/MyConfiguration.class
 smarthouse/dth/data/DthData$DthDataBuilder.class
 smarthouse/SmartHouseApplication.class
 smarthouse/dth/controller/DthController.class
@@ -7,5 +8,7 @@ smarthouse/lights/data/Light$LightBuilder.class
 smarthouse/tools/ScriptsExecutor.class
 smarthouse/lights/data/Light.class
 smarthouse/lights/service/LightsService.class
+smarthouse/configuration/MyConfiguration$1.class
 smarthouse/tools/MockedData.class
 smarthouse/lights/controller/LightsController.class
+smarthouse/gpio/service/GpioService.class
