@@ -1,0 +1,76 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view3">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+
+                padding: 10px;
+            }
+        </style>
+
+        <iron-ajax id="getLights" auto url="http://192.168.0.23:9000/lights" handle-as="json" on-response="_handleResponse"></iron-ajax>
+        <iron-ajax id="switchLight" method="POST" url="http://192.168.0.23:9000/lights/[[_chosenLight]]" handle-as="json" on-response="_onRequestSuccess"></iron-ajax>
+
+        <template is="dom-repeat" items="{{lights}}">
+            <div class="card">
+                <div class="circle" style="{{item.color}}">[[item.id]]</div>
+                <template is="dom-if" if="{{item.switchOn}}">
+                    <p>Bulb [[item.id]] is turn on</p>
+                </template>
+                <template is="dom-if" if="{{!item.switchOn}}">
+                    <p>Bulb [[item.id]] is turn off</p>
+                </template>
+                <paper-button toggles raised on-tap="_onButtonTap" data-item$="[[item.id]]">switch</paper-button>
+            </div>
+        </template>
+    </template>
+
+    <script>
+        class MyView3 extends Polymer.Element {
+            static get is() {
+                return 'my-view3';
+            }
+
+            static get properties() {
+                return {
+                    lights: {
+                        type: Array,
+                        notify: true
+                    },
+                    _chosenLight: {
+                        type: String
+                    }
+                }
+            }
+
+            _handleResponse(e) {
+                const response = e.detail.response;
+                if (!response) {
+                    return;
+                }
+                this.set('lights', response);
+                this.lights.forEach(light => {
+                    if (light.switchOn) {
+                        light.color = 'background-color: yellow;';
+                    }
+                });
+            }
+
+            _onButtonTap(e) {
+                this.set('_chosenLight', e.target.dataset.item);
+                this.$.switchLight.generateRequest();
+            }
+
+            _onRequestSuccess() {
+                this.$.getLights.generateRequest();
+            }
+        }
+
+        window.customElements.define(MyView3.is, MyView3);
+    </script>
+</dom-module>
