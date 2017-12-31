@@ -1,7 +1,7 @@
 package smarthouse.lights.controller;
 
 import org.springframework.web.bind.annotation.*;
-import smarthouse.lights.data.Light;
+import smarthouse.lights.data.LightDTO;
 import smarthouse.lights.service.LightsService;
 
 import java.util.List;
@@ -17,12 +17,12 @@ public class LightsController {
     }
 
     @GetMapping
-    public List<Light> getLights() {
+    public List<LightDTO> getLights() {
         return this.lightsService.getLights();
     }
 
     @GetMapping("/{lightId}")
-    public Light getLight(@PathVariable("lightId") int lightId) {
+    public LightDTO getLight(@PathVariable("lightId") int lightId) {
         return this.lightsService.getLight(lightId);
     }
 

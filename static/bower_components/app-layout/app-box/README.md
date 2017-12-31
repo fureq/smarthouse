@@ -11,7 +11,7 @@ rate than the foreground.
 ```
 
 Notice the `background` attribute in the `img` element; this attribute specifies that that
-image is used as the background. By adding the background to the light dom, you can compose
+image is used as the background. By adding the background to the lightDTO dom, you can compose
 backgrounds that can change dynamically. Alternatively, the mixin `--app-box-background-front-layer`
  allows to style the background. For example:
 

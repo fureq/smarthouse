@@ -1546,7 +1546,7 @@ Closes #247
   * Added guillermo's client-side EventEmitter. Closes #132
   * Added progress indicator to the HTML reporter
   * Fixed slow browser tests. Closes #135
-  * Fixed "suite" color for light terminals
+  * Fixed "suite" color for lightDTO terminals
   * Fixed `require()` leak spotted by [guillermo]
 
 0.3.6 / 2011-12-09

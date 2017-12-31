@@ -33,13 +33,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <test-fixture id="ButtonWithNativeInput">
     <template>
-      <test-light-dom><input id="input"></test-light-dom>
+      <test-lightDTO-dom><input id="input"></test-lightDTO-dom>
     </template>
   </test-fixture>
 
   <test-fixture id="ButtonWithPaperInput">
     <template>
-      <test-light-dom><paper-input id="input"></paper-input></test-light-dom>
+      <test-lightDTO-dom><paper-input id="input"></paper-input></test-lightDTO-dom>
     </template>
   </test-fixture>
 
@@ -214,7 +214,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       });
 
       suite('nested native input inside button', function() {
-        test('space in light child input does not trigger a button click event', function(done) {
+        test('space in lightDTO child input does not trigger a button click event', function(done) {
           var item = fixture('ButtonWithNativeInput');
           var input = item.querySelector('#input');
 
@@ -250,7 +250,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       });
 
       suite('nested paper-input inside button', function() {
-        test('space in light child input does not trigger a button click event', function(done) {
+        test('space in lightDTO child input does not trigger a button click event', function(done) {
           var item = fixture('ButtonWithPaperInput');
           var input = item.querySelector('#input');
 

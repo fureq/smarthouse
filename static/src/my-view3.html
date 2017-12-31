@@ -54,9 +54,9 @@
                     return;
                 }
                 this.set('lights', response);
-                this.lights.forEach(light => {
-                    if (light.switchOn) {
-                        light.color = 'background-color: yellow;';
+                this.lights.forEach(lightDTO => {
+                    if (lightDTO.switchOn) {
+                        lightDTO.color = 'background-color: yellow;';
                     }
                 });
             }

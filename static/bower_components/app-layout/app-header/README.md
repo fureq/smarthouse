@@ -15,7 +15,7 @@ if using `reveals`, the header slides back when scrolling back up. For example:
 ```
 
 app-header can also condense when scrolling down. To achieve this behavior, the header
-must have a larger height than the `sticky` element in the light DOM. For example:
+must have a larger height than the `sticky` element in the lightDTO DOM. For example:
 
 ```html
 <app-header style="height: 96px;" condenses fixed>
@@ -156,7 +156,7 @@ to the element with the `condensed-title` attribute as the header condenses. For
 * **resize-snapped-title**
 Upon scrolling past a threshold, this effect fades in/out the titles using opacity transitions.
 Similarly to `resize-title`, the `main-title` and `condensed-title` elements must be placed in the
-light DOM.
+lightDTO DOM.
 
 * **waterfall**
 Toggles the shadow property in app-header to create a sense of depth (as recommended in the
@@ -186,7 +186,7 @@ Installs the waterfall, resize-title, blend-background and parallax-background e
 
 Attribute | Description         | Default
 ----------|---------------------|----------------------------------------
-`sticky` | Element that remains at the top when the header condenses. | The first app-toolbar in the light DOM.
+`sticky` | Element that remains at the top when the header condenses. | The first app-toolbar in the lightDTO DOM.
 
 
 ## Styling

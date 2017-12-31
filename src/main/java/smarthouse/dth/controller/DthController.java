@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import smarthouse.dth.data.DthData;
 import smarthouse.dth.service.DthService;
-import smarthouse.tools.MockedData;
-import smarthouse.tools.ScriptsExecutor;
 
 @RestController
 @RequestMapping("/dth")

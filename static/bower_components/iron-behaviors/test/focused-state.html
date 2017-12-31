@@ -33,10 +33,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <test-fixture id="LightDOM">
     <template>
-      <test-light-dom>
+      <test-lightDTO-dom>
         <input id="input">
         <nested-focusable></nested-focusable>
-      </test-light-dom>
+      </test-lightDTO-dom>
     </template>
   </test-fixture>
 
@@ -119,7 +119,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     });
 
 
-    suite('elements in the light dom', function() {
+    suite('elements in the lightDTO dom', function() {
       var lightDOM, input, lightDescendantShadowInput;
 
       setup(function() {

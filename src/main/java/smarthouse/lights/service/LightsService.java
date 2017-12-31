@@ -1,8 +1,10 @@
 package smarthouse.lights.service;
 
 import org.springframework.stereotype.Service;
-import smarthouse.gpio.service.GpioService;
 import smarthouse.lights.data.Light;
+import smarthouse.lights.data.LightDTO;
+import smarthouse.gpio.CmdExecutor;
+import smarthouse.gpio.ScriptsExecutor;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -10,23 +12,26 @@ import java.util.stream.Collectors;
 @Service
 public class LightsService {
 
-    private final GpioService gpioService;
+    private final ScriptsExecutor scriptsExecutor;
 
-    public LightsService(GpioService gpioService) {
-        this.gpioService = gpioService;
+    public LightsService(CmdExecutor cmdExecutor) {
+        this.scriptsExecutor = cmdExecutor;
     }
 
-    public List<Light> getLights() {
-        return gpioService.getLights().entrySet().stream()
-                .map(entry -> Light.fromGpioPinDigitalOutput(entry.getKey(), entry.getValue()))
-                .collect(Collectors.toList());
+    public List<LightDTO> getLights() {
+        return scriptsExecutor.getLights().stream().map(Light::toLightDTO).collect(Collectors.toList());
     }
 
-    public Light getLight(int id) {
-        return Light.fromGpioPinDigitalOutput(id, gpioService.getLights().get(id));
+    public LightDTO getLight(int id) {
+        return scriptsExecutor.getLight(id).toLightDTO();
     }
 
     public void switchLight(int id) {
-        gpioService.changeState(id);
+        try {
+            this.scriptsExecutor.switchState(id);
+        } catch (Exception e) {
+            System.err.println("Cannot switch state. Reason: " + e.getMessage());
+        }
+
     }
 }

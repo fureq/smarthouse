@@ -2,16 +2,15 @@ package smarthouse.dth.service;
 
 import org.springframework.stereotype.Service;
 import smarthouse.dth.data.DthData;
-import smarthouse.tools.MockedData;
-import smarthouse.tools.PythonExecutor;
-import smarthouse.tools.ScriptsExecutor;
+import smarthouse.gpio.CmdExecutor;
+import smarthouse.gpio.ScriptsExecutor;
 
 @Service
 public class DthService {
     private final ScriptsExecutor scriptsExecutor;
 
-    public DthService(PythonExecutor pythonExecutor) {
-        this.scriptsExecutor = pythonExecutor;
+    public DthService(CmdExecutor cmdExecutor) {
+        this.scriptsExecutor = cmdExecutor;
     }
 
     public DthData getDthData() {

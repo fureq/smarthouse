@@ -9,15 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Light {
+public class LightDTO {
     private int id;
     private boolean switchOn;
-    private int pinNumber;
-
-    public LightDTO toLightDTO() {
-        return LightDTO.builder()
-                .id(id)
-                .switchOn(switchOn)
-                .build();
-    }
 }
