@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f221cd8-4241-48f8-8976-df653a2a528d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/classes/smarthouse/lights/data/Light$LightBuilder.class" afterPath="$PROJECT_DIR$/../target/classes/smarthouse/lights/data/Light$LightBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/classes/smarthouse/lights/data/Light.class" afterPath="$PROJECT_DIR$/../target/classes/smarthouse/lights/data/Light.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/classes/smarthouse/lights/service/LightsService.class" afterPath="$PROJECT_DIR$/../target/classes/smarthouse/lights/service/LightsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/classes/smarthouse/tools/MockedData.class" afterPath="$PROJECT_DIR$/../target/classes/smarthouse/tools/MockedData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/classes/smarthouse/tools/ScriptsExecutor.class" afterPath="$PROJECT_DIR$/../target/classes/smarthouse/tools/ScriptsExecutor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/smart-house-0.1.0.jar" afterPath="$PROJECT_DIR$/../target/smart-house-0.1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/smart-house-0.1.0.jar.original" afterPath="$PROJECT_DIR$/../target/smart-house-0.1.0.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pom.xml" afterPath="$PROJECT_DIR$/../pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/smarthouse/gpio/service/GpioService.java" afterPath="$PROJECT_DIR$/../src/main/java/smarthouse/gpio/service/GpioService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/smarthouse/lights/data/Light.java" afterPath="$PROJECT_DIR$/../src/main/java/smarthouse/lights/data/Light.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/smarthouse/lights/service/LightsService.java" afterPath="$PROJECT_DIR$/../src/main/java/smarthouse/lights/service/LightsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/smarthouse/tools/MockedData.java" afterPath="$PROJECT_DIR$/../src/main/java/smarthouse/tools/MockedData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/smarthouse/tools/ScriptsExecutor.java" afterPath="$PROJECT_DIR$/../src/main/java/smarthouse/tools/ScriptsExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../static/src/config.json" afterPath="$PROJECT_DIR$/../static/src/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="0f221cd8-4241-48f8-8976-df653a2a528d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,14 +22,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GpioService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GpioService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../src/main/java/smarthouse/gpio/service/GpioService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="180">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-view1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../target/static/src/my-view1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="80" column="57" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-view2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../target/static/src/my-view2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-view3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../target/static/src/my-view3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-view404.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../target/static/src/my-view404.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,7 +97,12 @@
     <findStrings>
       <find>appjs</find>
       <find>ajax</find>
+      <find>local</find>
+      <find>localhost</find>
     </findStrings>
+    <replaceStrings>
+      <replace>192.168.0.23</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -101,6 +128,9 @@
         <option value="$PROJECT_DIR$/../src/main/java/smarthouse/lights/controller/LightsController.java" />
         <option value="$PROJECT_DIR$/../static/src/config.json" />
         <option value="$PROJECT_DIR$/../static/src/my-view1.html" />
+        <option value="$PROJECT_DIR$/../target/static/src/my-view1.html" />
+        <option value="$PROJECT_DIR$/../target/static/src/my-view2.html" />
+        <option value="$PROJECT_DIR$/../target/static/src/my-view3.html" />
       </list>
     </option>
   </component>
@@ -153,37 +183,20 @@
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-house" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-house" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-house" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-house" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="smarthouse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-house" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="smarthouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,15 +419,16 @@
       <workItem from="1514638677548" duration="31000" />
       <workItem from="1514638730939" duration="1437000" />
       <workItem from="1514718846576" duration="1500000" />
-      <workItem from="1514723769580" duration="3675000" />
+      <workItem from="1514723769580" duration="3765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6643000" />
+    <option name="totallyTimeSpent" value="6733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -430,7 +444,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -621,11 +635,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../src/main/java/smarthouse/gpio/service/GpioService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="180">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../target/static/src/my-view1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="80" column="57" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../target/static/src/my-view2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../target/static/src/my-view3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../target/static/src/my-view404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
