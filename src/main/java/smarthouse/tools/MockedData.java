@@ -20,25 +20,25 @@ public class MockedData implements ScriptsExecutor {
         lights.put(2, Light.builder().id(2).switchOn(true).build());
     }
 
-    @Override
-    public List<Light> getLights() {
-        return new ArrayList<>(lights.values());
-    }
-
-    @Override
-    public Light getLight(int id) {
-        return lights.get(id);
-    }
-
-    @Override
-    public void turnLightOn(int id) {
-        lights.get(id).setSwitchOn(true);
-    }
-
-    @Override
-    public void turnLightOf(int id) {
-        lights.get(id).setSwitchOn(false);
-    }
+//    @Override
+//    public List<Light> getLights() {
+//        return new ArrayList<>(lights.values());
+//    }
+//
+//    @Override
+//    public Light getLight(int id) {
+//        return lights.get(id);
+//    }
+//
+//    @Override
+//    public void turnLightOn(int id) {
+//        lights.get(id).setSwitchOn(true);
+//    }
+//
+//    @Override
+//    public void turnLightOf(int id) {
+//        lights.get(id).setSwitchOn(false);
+//    }
 
     @Override
     public DthData getDth() {

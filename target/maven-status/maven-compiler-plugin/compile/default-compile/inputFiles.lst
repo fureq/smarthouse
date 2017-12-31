@@ -4,3 +4,8 @@
 /home/sfurman/smart-house/src/main/java/smarthouse/lights/controller/LightsController.java
 /home/sfurman/smart-house/src/main/java/smarthouse/tools/ScriptsExecutor.java
 /home/sfurman/smart-house/src/main/java/smarthouse/SmartHouseApplication.java
+/home/sfurman/smart-house/src/main/java/smarthouse/gpio/service/GpioService.java
+/home/sfurman/smart-house/src/main/java/smarthouse/configuration/MyConfiguration.java
+/home/sfurman/smart-house/src/main/java/smarthouse/dth/service/DthService.java
+/home/sfurman/smart-house/src/main/java/smarthouse/dth/controller/DthController.java
+/home/sfurman/smart-house/src/main/java/smarthouse/dth/data/DthData.java

@@ -1,35 +1,32 @@
 package smarthouse.lights.service;
 
 import org.springframework.stereotype.Service;
+import smarthouse.gpio.service.GpioService;
 import smarthouse.lights.data.Light;
-import smarthouse.tools.MockedData;
-import smarthouse.tools.ScriptsExecutor;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class LightsService {
 
-    private final ScriptsExecutor scriptsExecutor;
+    private final GpioService gpioService;
 
-    public LightsService(MockedData mockedData) {
-        this.scriptsExecutor = mockedData;
+    public LightsService(GpioService gpioService) {
+        this.gpioService = gpioService;
     }
 
     public List<Light> getLights() {
-        return scriptsExecutor.getLights();
+        return gpioService.getLights().entrySet().stream()
+                .map(entry -> Light.fromGpioPinDigitalOutput(entry.getKey(), entry.getValue()))
+                .collect(Collectors.toList());
     }
 
     public Light getLight(int id) {
-        return scriptsExecutor.getLight(id);
+        return Light.fromGpioPinDigitalOutput(id, gpioService.getLights().get(id));
     }
 
     public void switchLight(int id) {
-        Light light = scriptsExecutor.getLight(id);
-        if (light.isSwitchOn()) {
-            scriptsExecutor.turnLightOf(id);
-        } else {
-            scriptsExecutor.turnLightOn(id);
-        }
+        gpioService.changeState(id);
     }
 }
