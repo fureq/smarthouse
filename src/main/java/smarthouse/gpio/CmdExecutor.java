@@ -1,5 +1,6 @@
 package smarthouse.gpio;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import smarthouse.dth.data.DthData;
@@ -57,7 +58,7 @@ public class CmdExecutor implements ScriptsExecutor {
 
     @Override
     public DthData getDth() {
-        return null;
+        return dthData;
     }
 
     @Override
@@ -84,12 +85,15 @@ public class CmdExecutor implements ScriptsExecutor {
 
     @Scheduled(fixedRate = 300000)
     public void updateDth() throws Exception {
-        String output = execute("pwd");
-        System.err.println(output);
-        output = execute("python python.py");
-        System.err.println(output);
-        output = execute("pwd");
-        System.err.println(output);
+        String output = execute("python ./pythonscript/script.py");
+        if(output.equals("Data Error")) {
+            System.err.println("Cannot read dth parameters");
+            return;
+        }
+        String[] data = output.split(",");
+        this.dthData.setTemperature(Double.parseDouble(data[0]));
+        this.dthData.setHumidity(Double.parseDouble(data[1]));
+        System.out.println("Dth data updated");
     }
 
     private String execute(String command) throws IOException, InterruptedException {
